@@ -1,0 +1,112 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Tree",
+            "request": "launch",
+            "mainClass": "Tree",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "DequeueTest",
+            "request": "launch",
+            "mainClass": "DequeueTest",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "dequeue",
+            "request": "launch",
+            "mainClass": "dequeue",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "CircularQueue",
+            "request": "launch",
+            "mainClass": "CircularQueue",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "Queue",
+            "request": "launch",
+            "mainClass": "Queue",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "stack",
+            "request": "launch",
+            "mainClass": "stack",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "circularlinkedlist",
+            "request": "launch",
+            "mainClass": "circularlinkedlist",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "singlylinkedlist",
+            "request": "launch",
+            "mainClass": "singlylinkedlist",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "array0",
+            "request": "launch",
+            "mainClass": "array0",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "array1",
+            "request": "launch",
+            "mainClass": "array1",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "array3",
+            "request": "launch",
+            "mainClass": "array3",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "arraybinarysearch",
+            "request": "launch",
+            "mainClass": "arraybinarysearch",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "arraylinearsearch",
+            "request": "launch",
+            "mainClass": "arraylinearsearch",
+            "projectName": "Practice_ce0762d4"
+        },
+        {
+            "type": "java",
+            "name": "doublylinkedlists",
+            "request": "launch",
+            "mainClass": "doublylinkedlists",
+            "projectName": "Practice_ce0762d4"
+        }
+    ]
+}
