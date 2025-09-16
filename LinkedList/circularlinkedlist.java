@@ -2,9 +2,9 @@ public class circularlinkedlist {
     public static void main(String[] args) {
         circular cl= new circular();
 
-        cl.insert_at_begin(0);
         cl.insert_at_begin(1);
-        cl.insert_at_begin(3);
+        cl.insert_at_begin(2);
+        cl.insert_at_begin(4);
         cl.insert_at_end(-1);
         cl.insert_at_end(-2);
         cl.insert_at_mid(5, 3);
