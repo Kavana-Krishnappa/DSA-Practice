@@ -3,10 +3,10 @@ public class stack {
         Stack2 s=new Stack2(5);
         boolean flag=s.isEmpty();
         System.out.println(flag);
-        s.push(1);
         s.push(2);
         s.push(3);
         s.push(4);
+        s.push(5);
         s.print_data();
         System.out.println("Peek");
         System.out.println(s.peek());
