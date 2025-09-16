@@ -3,12 +3,12 @@ import java.util.Queue;
 public class Tree {
     public static void main(String[] args) {
         BinarySearchTree binarySearchTree=new BinarySearchTree();
-        binarySearchTree.insert(10);
-        binarySearchTree.insert(8);
         binarySearchTree.insert(11);
-        binarySearchTree.insert(12);
-        binarySearchTree.insert(6);
         binarySearchTree.insert(9);
+        binarySearchTree.insert(12);
+        binarySearchTree.insert(13);
+        binarySearchTree.insert(7);
+        binarySearchTree.insert(10);
          System.out.println("inorder:");
         binarySearchTree.inorder();
         System.out.println("-----------------");
