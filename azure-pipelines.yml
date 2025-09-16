@@ -1,19 +1,34 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- array
+  branches:
+    include:
+      - array   # your branch name
 
-pool:
-  vmImage: ubuntu-latest
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    # ✅ Step 1: Compile Java files
+    - task: CmdLine@2
+      displayName: "Compile Java files"
+      inputs:
+        script: |
+          mkdir -p out
+          javac -d out $(find . -name "*.java")
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+    # ✅ Step 2: Package into a JAR (optional, skip if you just want .class files)
+    - task: CmdLine@2
+      displayName: "Create JAR file"
+      inputs:
+        script: |
+          jar cf out/app.jar -C out .
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    # ✅ Step 3: Publish the build artifacts
+    - task: PublishBuildArtifacts@1
+      displayName: "Publish artifacts"
+      inputs:
+        PathtoPublish: "$(System.DefaultWorkingDirectory)/out"
+        ArtifactName: "drop"
+        publishLocation: "Container"
