@@ -2,12 +2,12 @@ public class CircularQueue {
  
     public static void main(String[] args) {
 queue q = new queue(5);
-q.Enqueue(1);
 q.Enqueue(2);
 q.Enqueue(3);
-System.out.println( "removed "+q.Dequeue());
 q.Enqueue(4);
+System.out.println( "removed "+q.Dequeue());
 q.Enqueue(5);
+q.Enqueue(6);
 
 q.display();
 
